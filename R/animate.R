@@ -262,6 +262,7 @@ draw_frames <- function(plot, frames, device, ref_frame, ...) {
     bmp = paste0(files, '.bmp'),
     svglite = ,
     svg = paste0(files, '.svg'),
+    ascii = paste0(files, ".txt"),
     current = files,
     stop('Unsupported device', call. = FALSE)
   )
@@ -274,6 +275,7 @@ draw_frames <- function(plot, frames, device, ref_frame, ...) {
     tiff = tiff,
     bmp = bmp,
     svg = svg,
+    ascii = devout::ascii,
     svglite = svglite::svglite
   )
 
